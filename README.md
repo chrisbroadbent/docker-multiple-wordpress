@@ -8,6 +8,23 @@ https://github.com/JamesGreenaway/wordpress
 
 Steps to take when docker, traefik, dnsmasq, mkcert are all installed on your machine.
 
+Your overall directory structure will look like:
+```
+docker
+ └── wordpress
+      ├── traefik
+      │    ├── certificates
+      │    │    ├── example-cert.pem
+      │    │    └── example-key.pem
+      │    ├── docker-compose.yml
+      │    └── dynamic_conf.toml
+      │
+      └── example (this is a wordpress project)
+           ├── wordpress (website root)
+           ├── .env
+           └── docker-compose.yml
+```
+
 1. create directory for website to be installed on
 2. create .env with site directory name as variable from master file
 3. create docker-compose.yml file from master file
