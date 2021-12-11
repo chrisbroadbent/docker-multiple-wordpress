@@ -6,8 +6,6 @@ https://github.com/JamesGreenaway/wordpress
 
 ## Setup each WordPress site
 
-Steps to take when docker, traefik, dnsmasq, mkcert are all installed on your machine.
-
 Your overall directory structure will look like:
 ```
 docker
@@ -24,6 +22,8 @@ docker
            ├── .env
            └── docker-compose.yml
 ```
+
+Steps to take when docker, traefik, dnsmasq, mkcert are all installed on your machine.
 
 1. create directory for website to be installed on
 2. create .env with site directory name as variable from master file
